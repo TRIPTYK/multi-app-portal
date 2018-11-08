@@ -1,0 +1,30 @@
+{
+  "name": "multi-app-portal",
+  "version": "0.0.1",
+  "description": "Portal for multiple SPA",
+  "main": "bootstrap.js",
+  "repository": "git@github.com:gilles-bertrand/multi-app-portal.git",
+  "author": "gilles BERTRAND",
+  "license": "MIT",
+  "toolchain": {
+    "node": "10.13.0",
+    "yarn": "1.12.0",
+    "nodemon": "^1.18.6",
+    "eslint": "^5.8.0"
+  },
+  "dependencies": {
+    "boom": "^7.2.2",
+    "dotenv": "^6.1.0",
+    "esm": "^3.0.84",
+    "glue": "^5.0.0",
+    "handlebars": "^4.0.12",
+    "hapi": "^17.7.0",
+    "inert": "^5.1.2",
+    "joi": "^14.0.4",
+    "vision": "^5.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "nodemon": "^1.18.6"
+  }
+}
