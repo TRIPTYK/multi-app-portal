@@ -1,15 +1,12 @@
-import {
-    get_index,
-} from './handler';
-const URI = '';
+const URI = "";
 export let router= [
-    {
-        path: `/{param*}`,
-        method: 'get',
-        handler: {
-            directory: {
-                path: 'public'
-            }
-        }
-    }
-];
+	{
+		path: "/{param*}",
+		method: "get",
+		handler: {
+			directory: {
+				path: ["public_portal"]
+			}
+		}
+	}
+]
