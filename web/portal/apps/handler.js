@@ -1,26 +1,15 @@
-import * as fs from 'fs-then-native';
-import path from 'path';
+import * as fs from "then-fs";
+import path from "path";
 
-export async function  get_index(request,h){
-    if(request.params.file){
-
-    try{
-        let filePath = path.resolve(`${process.cwd()}/public_apps/${request.url.pathname}`);
-         let fileContent = await fs.readFile(filePath)
-         return fileContent;
-     } catch(e){
-         console.log(e)
-     }
-    }
-    return h.view('index');
+export async function get_index(request, h) {
+    let filePath = path.resolve(
+        `${process.cwd()}/public_apps/${request.url.pathname}`
+      );
+     
+    let isFile = await fs.exists(filePath)
+  if (request.params.file && isFile) {
+    return h.file(filePath)
+  } else{
+    return h.view("index",{isApp:true, app:request.pre.app});
+  }
 }
-/*
-    try{
-       let filePath = path.resolve(`${process.cwd()}/public_apps/${request.url.pathname}`);
-        let fileContent = await fs.readFile(filePath)
-        return fileContent;
-    } catch(e){
-        console.log(e)
-    }
-   
-*/

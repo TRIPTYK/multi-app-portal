@@ -14,7 +14,7 @@ export const manifest = {
 			{plugin:inert},
 			{plugin:staticPlugin},
 			{plugin:portalPlugin},
-			{plugin:appsPlugin}
+			{plugin:appsPlugin},
 		]
 	}
 }

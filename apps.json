@@ -1,0 +1,22 @@
+{
+    "apps":[
+        {
+            "name":"application 1",
+            "uri":"app1",
+            "type":"angular",
+            "runtimejs":"/app1/runtime.ec2944dd8b20ec099bf3.js",
+            "polyfillsjs":"/app1/polyfills.c6871e56cb80756a5498.js",
+            "mainjs":"/app1/main.75d2d25299bb293c7551.js",
+            "style":"/app1/styles.9ea26ebd55073c38467f.css"
+        },
+        {
+            "name":"application 2",
+            "uri":"app2",
+            "type":"angular",
+            "runtimejs":"/app2/runtime.ec2944dd8b20ec099bf3.js",
+            "polyfillsjs":"/app2/polyfills.c6871e56cb80756a5498.js",
+            "mainjs":"/app2/main.bfabe63feb52ae347ce8.js",
+            "style":"/app2/styles.84d8b219f31efa3fcb5e.css"
+        }
+    ]
+}
