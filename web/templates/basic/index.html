@@ -1,7 +1,5 @@
 {{#if isApp}}
-<link rel="stylesheet" href="{{app.style}}">
+{{orderFilesById app.cssFiles 'css'}}
 <app-root></app-root>
-<script type="text/javascript" src="{{app.runtimejs}}"></script>
-<script type="text/javascript" src="{{app.polyfillsjs}}"></script>
-<script type="text/javascript" src="{{app.mainjs}}"></script>
+{{orderFilesById app.jsFiles 'js'}}
 {{/if}}

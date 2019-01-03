@@ -16,6 +16,8 @@ const startServer = async ()=>{
         })
         await server.start();
         console.log(`server running at host : ${process.env.HOST} and port : ${process.env.PORT}`);
+        server.table().forEach((route) => console.log(`${route.method}\t${route.path}`));
+
     } catch(err){
         console.error(err);
         process.exit(1);

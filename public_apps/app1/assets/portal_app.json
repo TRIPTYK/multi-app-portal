@@ -1,0 +1,16 @@
+{
+    "name":"app1",
+    "uri":"app1",
+    "jsFiles": [
+        {"orderIndex":3,"path":"main.75d2d25299bb293c7551.js"},
+        {"orderIndex":2,"path":"polyfills.c6871e56cb80756a5498.js"},
+        {"orderIndex":1,"path":"runtime.ec2944dd8b20ec099bf3.js"}
+    ],
+    "cssFiles":[
+        {"orderIndex":1,"path":"styles.9ea26ebd55073c38467f.css"}
+    ],
+    "subMenu":[
+      {"name":"contact","url":"/app1/contact"},
+      {"name":"about","url":"/app1/about"}
+    ]
+}

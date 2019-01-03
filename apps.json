@@ -17,6 +17,15 @@
             "polyfillsjs":"/app2/polyfills.c6871e56cb80756a5498.js",
             "mainjs":"/app2/main.bfabe63feb52ae347ce8.js",
             "style":"/app2/styles.84d8b219f31efa3fcb5e.css"
+        },
+        {
+            "name":"application 3",
+            "uri":"app3",
+            "type":"angular",
+            "runtimejs":"/app2/runtime.ec2944dd8b20ec099bf3.js",
+            "polyfillsjs":"/app2/polyfills.c6871e56cb80756a5498.js",
+            "mainjs":"/app2/main.bfabe63feb52ae347ce8.js",
+            "style":"/app2/styles.84d8b219f31efa3fcb5e.css"
         }
     ]
 }

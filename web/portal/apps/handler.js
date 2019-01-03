@@ -10,6 +10,6 @@ export async function get_index(request, h) {
   if (request.params.file && isFile) {
     return h.file(filePath)
   } else{
-    return h.view("index",{isApp:true, app:request.pre.app});
+    return h.view("index",{isApp:true, app:request.pre.app, apps:request.pre.apps});
   }
 }
