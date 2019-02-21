@@ -1,0 +1,19 @@
+{
+    "HOME" : {
+        "TITLE": "Welcome bij AgendAS",
+        "INTRO" : "De nieuwe versie van de sociale agenda is gearriveerd !"
+    },
+    "CALENDAR" : {
+        "ADD_EVENT": "Voeg een afspraak toe...", 
+        "REMOVE_EVENT": "Verwijderen",
+        "PREVIOUS": "Vorig",
+        "TODAY": "Vandaag",
+        "NEXT": "Volgend",
+        "MONTH": "Maand",
+        "WEEK": "Week",
+        "DAY": "Dag"
+    },
+    "AGENDA_FORMATTER": {
+        "REMOVE_BOOKING" : "Verwijderen"
+    }
+}

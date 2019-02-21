@@ -34,6 +34,11 @@ let getRoutes = async () => {
       method: "get",
       handler: get_index
     });
+    router.push({
+      path: `/${app.uri}/assets/{type*2}`,
+      method: "get",
+      handler: get_index
+    });
   });
   return router
 }

@@ -1,0 +1,19 @@
+{
+    "HOME" : {
+        "TITLE": "Bienvenue sur AgendAS",
+        "INTRO" : "La nouvelle version d'agenda des services sociaux est arrivé !"
+    },
+    "CALENDAR" : {
+        "ADD_EVENT": "Ajouter un rendez-vous...", 
+        "REMOVE_EVENT": "Supprimer",
+        "PREVIOUS": "Précédent",
+        "TODAY": "Aujourd'hui",
+        "NEXT": "Suivant",
+        "MONTH": "Mois",
+        "WEEK": "Semaine",
+        "DAY": "Jour"
+    },
+    "AGENDA_FORMATTER": {
+        "REMOVE_BOOKING" : "Supprimer réservation"
+    }
+}

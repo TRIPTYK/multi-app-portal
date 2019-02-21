@@ -1,0 +1,19 @@
+{
+    "HOME": {
+        "TITLE": "Welcome to AgendAS",
+        "INTRO" : "The new version of the social services agenda has arrived!"
+    },
+    "CALENDAR": {
+        "ADD_EVENT": "Add a meeting...", 
+        "REMOVE_EVENT": "Remove",
+        "PREVIOUS": "Previous",
+        "TODAY": "Today",
+        "NEXT": "Next",
+        "MONTH": "Month",
+        "WEEK": "Week",
+        "DAY": "Day"
+    },
+    "AGENDA_FORMATTER": {
+        "REMOVE_BOOKING" : "Remove booking"
+    }
+}
