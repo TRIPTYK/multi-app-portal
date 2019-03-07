@@ -1,0 +1,13 @@
+{
+  "name": "ASms",
+  "short_name": "ASms",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#488aff",
+  "theme_color": "#488aff"
+}

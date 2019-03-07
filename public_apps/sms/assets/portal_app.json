@@ -1,0 +1,17 @@
+{
+    "name":"SMS",
+    "uri":"sms",
+    "jsFiles": [
+        {"orderIndex":1,"path":"inline.318b50c57b4eba3d437b.bundle.js"},
+        {"orderIndex":4,"path":"main.5f7291c692fc22ba5d88.bundle.js"},
+        {"orderIndex":2,"path":"polyfills.9bcf6806ae24552557bb.bundle.js"},
+        {"orderIndex":3,"path":"scripts.b2cff9d6f06f9914f47a.bundle.js"}
+    ],
+    "cssFiles":[
+        {"orderIndex":1,"path":"styles.db6ecf63549c58928659.bundle.css"}
+    ],
+    "subMenu":[
+      {"name":"Dashboard","url":"/sms/dashboard"},
+      {"name":"Settings","url":"/sms/settings"}
+    ]
+}
