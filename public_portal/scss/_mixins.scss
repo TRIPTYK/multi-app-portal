@@ -1,0 +1,50 @@
+@mixin box-sizing($box: "border-box") {
+    html {
+        box-sizing: border-box;
+    }
+    *, *:after, *:before {
+        box-sizing: inherit;
+    }
+}
+
+@mixin primary-content($l: false) {
+    @if ($l){
+        color: $white;
+    } @else {
+        color: $black;
+    }
+    font : {
+        // family: "lato", sans-serif;
+        family: "Poppins", sans-serif;
+        size: 1em;
+        weight: 300;
+    }
+}
+
+@mixin dropdown-menu {
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: $white;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        border: 1px solid $grey;
+        border-radius: 2px;
+    }
+}
+
+@mixin btn-circle($type: user) {
+    @if $type == user {
+        background-color: $color-user;
+    } @else if $type == event {
+        background-color: $color-event;
+    } @else if $type == settings {
+        background-color: $color-settings;
+    } @else if $type == admin {
+        background-color: $color-admin;
+    }
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}

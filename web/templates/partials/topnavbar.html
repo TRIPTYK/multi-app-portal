@@ -1,147 +1,110 @@
-<!-- ============================================================== -->
 <!-- Topbar header - style you can find in pages.scss -->
-<!-- ============================================================== -->
-<header class="topbar">
-  <nav class="navbar top-navbar navbar-expand-md navbar-light">
-    <!-- ============================================================== -->
+
+<header id="tpk-topnavbar" class="tpk-header-navbar">
+  <nav>
+
     <!-- Logo -->
-    <!-- ============================================================== -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">
+
+    <div class="header-logo">
+      <a href="/">
         <!-- Logo icon
-        --><b>
-          <!--
-            You can put here icon as well // <i class="wi wi-sunset"></i> //
-          -->
-          <!-- Dark Logo icon -->
-          <img
-            src="/assets/images/logo-icon-scb.png"
-            alt="homepage"
-            class="dark-logo"
-          />
-        </b>
+          Dark Logo icon -->
+        <img src="/assets/images/logo-icon-scb.png" alt="homepage" class="dark-logo" />
         <!-- End Logo icon -->
-        <!-- Logo text
-        --><span>
           <!-- dark Logo text -->
           <img
             src="/assets/images/logo-text-scb.png"
             alt="homepage"
-            class="dark-logo"/>
-         </span>
+            class="text-logo"/>
       </a>
     </div>
-    <!-- ============================================================== -->
+
     <!-- End Logo -->
-    <!-- ============================================================== -->
-    <div class="navbar-collapse">
-      <!-- ============================================================== -->
+
+
+    <div class="navbar">
+
       <!-- toggle and nav items -->
-      <!-- ============================================================== -->
-      <ul class="navbar-nav mr-auto mt-md-0">
+
+      <ul class="navbar-nav left-nav">
         <!-- This is -->
-        <li class="nav-item">
-          <a
-            class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
-            href="javascript:void(0)"
-            ><i class="mdi mdi-menu"></i
-          ></a>
+        <!-- <li class="nav-item">
+          <a href="">item1</a>
+        </li> -->
+        <li class="nav-item expand-leftbar">
+          <a href=""><i class="fas fa-bars"></i></a>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
-            href="javascript:void(0)"
-            ><i class="ti-menu"></i
-          ></a>
-        </li>
-        <!-- ============================================================== -->
+
         <!-- Search -->
-        <!-- ============================================================== -->
-        <li class="nav-item hidden-sm-down search-box">
-          <a
-            class="nav-link hidden-sm-down text-muted waves-effect waves-dark"
-            href="javascript:void(0)"
-            ><i class="ti-search"></i
-          ></a>
-          <form class="app-search">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search & enter"
-            />
-            <a class="srh-btn"><i class="ti-close"></i></a>
+
+        <li class="nav-item search-box">
+          <a href=""><i class="fas fa-search"></i> search</a>
+          <form class="app-search" hidden>
+            <input type="text" class="form-control" placeholder="Search & enter" />
+            <a href="">close</a>
           </form>
         </li>
-        
+
       </ul>
-      <!-- ============================================================== -->
+
       <!-- User profile and search -->
-      <!-- ============================================================== -->
-      <ul class="navbar-nav my-lg-0">
-        <!-- ============================================================== -->
+
+      <ul class="navbar-nav login">
+
         <!-- Comment -->
-        <!-- ============================================================== -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark"
-            href=""
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <i class="mdi mdi-message"></i>
-            <div class="notify">
-              <span class="heartbit"></span> <span class="point"></span>
-            </div>
+
+        <li class="nav-item comments dropdown">
+          <a class="nav-link dropdown-toggle" href="#" aria-haspopup="true" aria-expanded="false">
+            
+              <i class="fas fa-comment"></i> <i class="far fa-dot-circle"></i>
+            
           </a>
-          <div class="dropdown-menu dropdown-menu-right mailbox scale-up">
-            <ul>
-              <li><div class="drop-title">Notifications</div></li>
+          <div class="dropdown-menu">
+            <ul class="messages">
+              <li>
+                <div class="title">Notifications</div>
+              </li>
               <li>
                 <div class="message-center">
                   <!-- Message -->
-                  <a href="#">
-                    <div class="btn btn-danger btn-circle">
+                  <a href="#" class="message-item admin">
+                    <div class="mail-btn">
                       <i class="fa fa-link"></i>
                     </div>
-                    <div class="mail-contnet">
+                    <div class="mail-content">
                       <h5>Luanch Admin</h5>
                       <span class="mail-desc">Just see the my new admin!</span>
                       <span class="time">9:30 AM</span>
                     </div>
                   </a>
                   <!-- Message -->
-                  <a href="#">
-                    <div class="btn btn-success btn-circle">
-                      <i class="ti-calendar"></i>
+                  <a href="#" class="message-item event">
+                    <div class="mail-btn">
+                      <i class="far fa-calendar-alt"></i>
                     </div>
-                    <div class="mail-contnet">
+                    <div class="mail-content">
                       <h5>Event today</h5>
-                      <span class="mail-desc"
-                        >Just a reminder that you have event</span
-                      >
+                      <span class="mail-desc">Just a reminder that you have event</span>
                       <span class="time">9:10 AM</span>
                     </div>
                   </a>
                   <!-- Message -->
-                  <a href="#">
-                    <div class="btn btn-info btn-circle">
-                      <i class="ti-settings"></i>
+                  <a href="#" class="message-item settings">
+                    <div class="mail-btn">
+                      <i class="fas fa-cog"></i>
                     </div>
-                    <div class="mail-contnet">
+                    <div class="mail-content">
                       <h5>Settings</h5>
-                      <span class="mail-desc"
-                        >You can customize this template as you want</span
-                      >
+                      <span class="mail-desc">You can customize this template as you want</span>
                       <span class="time">9:08 AM</span>
                     </div>
                   </a>
                   <!-- Message -->
-                  <a href="#">
-                    <div class="btn btn-primary btn-circle">
-                      <i class="ti-user"></i>
+                  <a href="#" class="message-item user">
+                    <div class="mail-btn">
+                      <i class="far fa-user"></i>
                     </div>
-                    <div class="mail-contnet">
+                    <div class="mail-content">
                       <h5>Pavan kumar</h5>
                       <span class="mail-desc">Just see the my admin!</span>
                       <span class="time">9:02 AM</span>
@@ -150,34 +113,26 @@
                 </div>
               </li>
               <li>
-                <a class="nav-link text-center" href="javascript:void(0);">
-                  <strong>Check all notifications</strong>
+                <a class="view-all" href="javascript:void(0);">
+                  <span>Check all notifications</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
               </li>
             </ul>
           </div>
         </li>
-        <!-- ============================================================== -->
+
         <!-- End Comment -->
-        <!-- ============================================================== -->
-       
-        <!-- ============================================================== -->
+
+
+
         <!-- Profile -->
-        <!-- ============================================================== -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-muted waves-effect waves-dark"
-            href=""
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            ><img
-              src="/assets/images/users/1.jpg"
-              alt="user"
-              class="profile-pic"
-          /></a>
-          <div class="dropdown-menu dropdown-menu-right scale-up">
+
+        <li class="nav-item dropdown profile">
+          <a class="nav-link dropdown-toggle" href="" aria-haspopup="true" aria-expanded="false">
+            <img src="/assets/images/users/1.jpg" alt="user" class="profile-pic" />
+          </a>
+          <div class="dropdown-menu">
             <ul class="dropdown-user">
               <li>
                 <div class="dw-user-box">
@@ -187,58 +142,48 @@
                   <div class="u-text">
                     <h4>Steave Jobs</h4>
                     <p class="text-muted">varun@gmail.com</p>
-                    <a
-                      href="/"
-                      class="btn btn-rounded btn-danger btn-sm"
-                      >View Profile</a
-                    >
+                    <a href="/" class="btn">View Profile</a>
                   </div>
                 </div>
               </li>
-              <li role="separator" class="divider"></li>
               <li>
-                <a href="#"><i class="ti-user"></i> My Profile</a>
+                <a href="#"><i class="far fa-user"></i> My Profile</a>
               </li>
-              <li role="separator" class="divider"></li>
               <li>
-                <a href="#"><i class="ti-settings"></i> Account Setting</a>
+                <a href="#"><i class="fas fa-cog"></i> Account Setting</a>
               </li>
-              <li role="separator" class="divider"></li>
               <li>
-                <a href="#"><i class="fa fa-power-off"></i> Logout</a>
+                <a href="#"><i class="fas fa-power-off"></i> Logout</a>
               </li>
             </ul>
           </div>
         </li>
-        <!-- ============================================================== -->
+
         <!-- Language -->
-        <!-- ============================================================== -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-muted waves-effect waves-dark"
-            href=""
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <i class="flag-icon flag-icon-fr"></i
-          ></a>
-          <div class="dropdown-menu dropdown-menu-right scale-up">
-            <a class="dropdown-item" href="#"
-              ><i class="flag-icon flag-icon-gb"></i> English</a
-            >
-            <a class="dropdown-item" href="#"
-              ><i class="flag-icon flag-icon-fr"></i> French</a
-            >
-            <a class="dropdown-item" href="#"
-              ><i class="flag-icon flag-icon-cn"></i> China</a
-            >
+
+        <li class="nav-item dropdown lang">
+          <a class="nav-link dropdown-toggle active" href="" aria-haspopup="true" aria-expanded="false">
+            <span class="flag-icon flag-icon-fr"></span>
+          </a>
+          <div class="dropdown-menu" >
+            <a class="dropdown-item" href="#">
+              <span class="flag-icon flag-icon-gb"></span> <span>English</span>
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="flag-icon flag-icon-fr"></span> <span>French</span>
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="flag-icon flag-icon-cn"></span> <span>China</span>
+            </a>
           </div>
         </li>
+
       </ul>
+
+
+
     </div>
   </nav>
 </header>
-<!-- ============================================================== -->
+
 <!-- End Topbar header -->
-<!-- ============================================================== -->
