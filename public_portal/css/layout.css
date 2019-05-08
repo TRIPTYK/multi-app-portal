@@ -3,8 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,600");
 /***** colors ****/
 main {
-  margin: 100px;
+  margin: 100px 100px 100px 340px;
   border: 1px solid green;
+
+  position: relative;
+  height: calc(100vh - 200px);
 }
 
 /****** HEADER ******/
@@ -483,6 +486,48 @@ main {
   background-color: transparent;
   color: #2bc5d8;
   font-weight: 400;
+}
+#tpk-leftnavbar.hovered #sidebarnav .sup-level {
+  margin-bottom: 10px;
+  width: 200px;
+}
+#tpk-leftnavbar.hovered #sidebarnav .sup-level-link {
+  width: 180px;
+  background-color: #2bc5d8;
+  font-weight: 600;
+  color: #fff;
+}
+#tpk-leftnavbar.hovered .menu-title {
+  display: inline-block;
+  color: #fff;
+  margin-left: 2rem;
+}
+#tpk-leftnavbar.hovered #sidebarnav ul {
+  position: relative;
+  width: 196px;
+  margin: 0 0.5rem;
+}
+#tpk-leftnavbar.hovered #sidebarnav ul > li {
+  position: relative;
+  background: #2bc5d8;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 4px; 
+}
+#tpk-leftnavbar.hovered #sidebarnav ul > li a {
+  width: 180px;
+  color: white;
+  padding-left: 70px;
+}
+#tpk-leftnavbar.hovered .sup-level ul {
+  display: block;
+}
+
+#tpk-topnavbar.tpk-header-navbar .nav-item.expand-leftbar {
+  display: none;
+}
+#tpk-leftnavbar.tpk-left-sidebar {
+  width: 240px;
 }
 
 /****** FOOTER ******/

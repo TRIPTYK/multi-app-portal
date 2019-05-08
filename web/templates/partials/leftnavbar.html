@@ -8,14 +8,14 @@
       <ul id="sidebarnav">
         <li class="sidebar-title">Main Dashboard</li>
         {{#each apps}}
-        <li>
-            <a href="/{{uri}}/" aria-expanded="false" >
+        <li class="sup-level">
+            <a href="/{{uri}}/" aria-expanded="false" class="sup-level-link">
               <i class="fas fa-address-card"></i> <span class="hide-menu menu-title">{{name}} </span>
             </a>
            {{#if subMenu}} 
             <ul aria-expanded="false" class="collapse">
               {{#each subMenu}}
-              <li><a href="{{url}}">{{name}}</a></li>
+              <li class="sub-level"><a href="{{url}}" class="sub-level-link">{{name}}</a></li>
               {{/each}}
             </ul>
             {{/if}}

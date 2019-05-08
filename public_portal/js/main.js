@@ -49,29 +49,33 @@
          *  Expand left navbar 
          * **********/
 
-        $('#tpk-topnavbar .text-logo').hide();
-        $('.expand-leftbar').on('click', function(e) {
+        // $('#tpk-topnavbar .text-logo').hide();
+        // $('.expand-leftbar').on('click', function(e) {
 
-            // pour que le menu reste ouvert s'il n'était déjà ---> ou inverse
-            // let newurl = window.location;
-            // newurl = newurl.toString();
-            // newurl = newurl.split('?');
-            // newurl.pop();
-            //----------
+        //     // pour que le menu reste ouvert s'il n'était déjà ---> ou inverse
+        //     // let newurl = window.location;
+        //     // newurl = newurl.toString();
+        //     // newurl = newurl.split('?');
+        //     // newurl.pop();
+        //     //----------
 
-            e.preventDefault();
-            if ($('#tpk-leftnavbar').hasClass('expanded')) {
-                $('#tpk-leftnavbar').removeClass('expanded');
-                $("#tpk-topnavbar .text-logo").hide();
-                $('#tpk-leftnavbar .collapse').hide();
-                // window.location = newurl + '?ex=false'; //
-            } else {
-                $('#tpk-leftnavbar').addClass('expanded');
-                $("#tpk-topnavbar .text-logo").show();
-                $('.menu-title').show();
-                // window.location = newurl + '?ex=true'; //
-            }
-        });
+        //     e.preventDefault();
+        //     if ($('#tpk-leftnavbar').hasClass('expanded')) {
+        //         $('#tpk-leftnavbar').removeClass('expanded');
+        //         $("#tpk-topnavbar .text-logo").hide();
+        //         $('#tpk-leftnavbar .collapse').hide();
+        //         // window.location = newurl + '?ex=false'; //
+        //     } else {
+        //         $('#tpk-leftnavbar').addClass('expanded');
+        //         $("#tpk-topnavbar .text-logo").show();
+        //         $('.menu-title').show();
+        //         // window.location = newurl + '?ex=true'; //
+        //     }
+        // });
+
+        $('#tpk-topnavbar .text-logo').show();
+        $('#tpk-leftnavbar').addClass('expanded');
+        $('.menu-title').show();
 
 
         /**********
@@ -124,6 +128,15 @@
         //     }
         // });
 
+        // $('#tpk-leftnavbar #sidebarnav .sup-level').mouseenter(function(e) {
+        //     if (!$('#tpk-leftnavbar').hasClass('expanded')) {
+        //         let that = $(this);
+        //         $('#tpk-leftnavbar').addClass('hovered');
+        //         that.find('.menu-title').removeClass('hide-menu').show();
+        //     }
+        // }).mouseleave(function(e) {
+        //     $('#tpk-leftnavbar').removeClass('hovered');
+        // });
     });
 
 
