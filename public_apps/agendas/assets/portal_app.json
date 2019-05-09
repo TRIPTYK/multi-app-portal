@@ -7,7 +7,9 @@
         {"orderIndex":1,"path":"runtime.ec2944dd8b20ec099bf3.js"}
     ],
     "cssFiles":[
-        {"orderIndex":1,"path":"styles.2ab0b3d8d18d59446a95.css"}
+        {"orderIndex":1,"path":"https://fonts.googleapis.com/icon?family=Material+Icons"},
+        {"orderIndex":2,"path":"https://fonts.googleapis.com/css?family=Roboto:300,400,500"},
+        {"orderIndex":3,"path":"styles.2ab0b3d8d18d59446a95.css"}
     ],
     "subMenu":[
       {"name":"test","url":"/agendas/12"}
