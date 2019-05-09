@@ -158,6 +158,7 @@ main {
 }
 
 #tpk-topnavbar.tpk-header-navbar .lang .dropdown-menu {
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
@@ -218,6 +219,7 @@ main {
 }
 
 #tpk-topnavbar.tpk-header-navbar .profile .dropdown-menu {
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
@@ -282,6 +284,7 @@ main {
 }
 
 #tpk-topnavbar.tpk-header-navbar .comments .dropdown-menu {
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
@@ -536,7 +539,7 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 80;
+  z-index: 100;
   background-color: #fff;
   padding: 1em 1em 1em 80px;
   -webkit-box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
