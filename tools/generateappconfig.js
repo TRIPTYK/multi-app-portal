@@ -41,12 +41,13 @@ const getValueFromIndexFile = async () => {
 };
 
 const saveConfig = async (config) =>{
-  await fs.writeFileSync(`${appFolder}/assets/portal_app2.json`,config);
-  console.log('file saved1')
+  await fs.writeFileSync(`${appFolder}/assets/portal_app.json`,config);
+  console.log('file saved')
 }
 const init = async ()=>{
+  console.log("Starting config generation");
   let configObject = await getValueFromIndexFile();
    await saveConfig(JSON.stringify(configObject));
-  console.log("file saved2");
+  console.log("Generation terminated");
 }
 init();
