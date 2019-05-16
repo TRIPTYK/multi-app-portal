@@ -6,7 +6,8 @@
     ],
     "watch": [
       "web/",
-      "public/"
+      "public/",
+      "tools/"
     ],
     "env": {
       "NODE_ENV": "development"

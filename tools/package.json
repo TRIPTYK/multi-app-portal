@@ -1,0 +1,12 @@
+{
+  "name": "portal_config_generator",
+  "version": "0.0.1",
+  "description": "This package generate a config for our app on the global portal",
+  "main": "generateappconfig.js",
+  "author": "Gilles-BERTRAND",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fs-then-native": "^2.0.0"
+  }
+}
