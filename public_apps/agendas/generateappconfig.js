@@ -1,7 +1,8 @@
+
 const path = require('path');
 const fs = require("fs-then-native");
 const cheerio = require("cheerio");
-const appFolder = ".";
+const appFolder = process.argv[2] || ".";
 const htmlFile = path.normalize(`${appFolder}/index.html`);
 const getScriptsFromHTMLData = data => {
   const $ = cheerio.load(data);
