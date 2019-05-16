@@ -1,7 +1,8 @@
-const appFolder = ".";
-const htmlFile = `${appFolder}/index.html`;
+const path = require('path');
 const fs = require("fs-then-native");
 const cheerio = require("cheerio");
+const appFolder = ".";
+const htmlFile = path.normalize(`${appFolder}/index.html`);
 const getScriptsFromHTMLData = data => {
   const $ = cheerio.load(data);
   const scripts = [];
@@ -41,7 +42,7 @@ const getValueFromIndexFile = async () => {
 };
 
 const saveConfig = async (config) =>{
-  await fs.writeFileSync(`${appFolder}/assets/portal_app.json`,config);
+  await fs.writeFileSync(path.normalize(`${appFolder}/assets/portal_app.json`,config));
   console.log('file saved')
 }
 const init = async ()=>{
