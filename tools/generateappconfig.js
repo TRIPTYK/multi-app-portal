@@ -42,7 +42,7 @@ const getValueFromIndexFile = async () => {
 };
 
 const saveConfig = async (config) =>{
-  await fs.writeFileSync(path.normalize(`${appFolder}/assets/portal_app.json`,config));
+  await fs.writeFileSync(path.normalize(`${appFolder}/assets/portal_app.json`),config);
   console.log('file saved')
 }
 const init = async ()=>{
