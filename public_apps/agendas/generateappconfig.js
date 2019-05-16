@@ -1,7 +1,8 @@
-const appFolder = ".";
-const htmlFile = `${appFolder}/index.html`;
+const path = require('path');
 const fs = require("fs-then-native");
 const cheerio = require("cheerio");
+const appFolder = ".";
+const htmlFile = path.normalize(`${appFolder}/index.html`);
 const getScriptsFromHTMLData = data => {
   const $ = cheerio.load(data);
   const scripts = [];
@@ -41,12 +42,14 @@ const getValueFromIndexFile = async () => {
 };
 
 const saveConfig = async (config) =>{
-  await fs.writeFileSync(`${appFolder}/assets/portal_app2.json`,config);
-  console.log('file saved1')
+  await fs.writeFileSync(path.normalize(`${appFolder}/assets/portal_app.json`),config);
+  console.log('file saved')
 }
 const init = async ()=>{
+  console.log("Starting config generation");
   let configObject = await getValueFromIndexFile();
+  console.log(JSON.stringify(configObject))
    await saveConfig(JSON.stringify(configObject));
-  console.log("file saved2");
+  console.log("Generation terminated");
 }
 init();

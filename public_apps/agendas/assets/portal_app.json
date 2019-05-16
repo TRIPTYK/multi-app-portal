@@ -1,17 +1,1 @@
-{
-    "name":"agendas",
-    "uri":"agendas",
-    "jsFiles": [
-        {"orderIndex":3,"path":"main.a517af74603e4cebf718.js"},
-        {"orderIndex":2,"path":"polyfills.76f7adf347a12e2d44ed.js"},
-        {"orderIndex":1,"path":"runtime.ec2944dd8b20ec099bf3.js"}
-    ],
-    "cssFiles":[
-        {"orderIndex":1,"path":"https://fonts.googleapis.com/icon?family=Material+Icons"},
-        {"orderIndex":2,"path":"https://fonts.googleapis.com/css?family=Roboto:300,400,500"},
-        {"orderIndex":3,"path":"styles.2ab0b3d8d18d59446a95.css"}
-    ],
-    "subMenu":[
-      {"name":"test","url":"/agendas/12"}
-    ]
-}
+{"name":"AgendAS","uri":"AgendAS","jsFiles":[{"orderIndex":0,"path":"runtime.ec2944dd8b20ec099bf3.js"},{"orderIndex":1,"path":"polyfills.76f7adf347a12e2d44ed.js"},{"orderIndex":2,"path":"main.a517af74603e4cebf718.js"}],"cssFiles":[{"orderIndex":0,"path":"https://fonts.googleapis.com/icon?family=Material+Icons"},{"orderIndex":1,"path":"https://fonts.googleapis.com/css?family=Roboto:300,400,500"},{"orderIndex":2,"path":"styles.2ab0b3d8d18d59446a95.css"}]}
